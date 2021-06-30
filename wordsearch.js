@@ -1,6 +1,5 @@
 const wordSearch = (letters, word) => {
     if (letters.length === 0) return 'empty array';
-    // console.log(letters.length);
 
     const horizontalJoin = letters.map(ls => ls.join(''))
     for (l of horizontalJoin) {
@@ -25,7 +24,7 @@ const wordSearch = (letters, word) => {
     for (v of verticalJoinReverse) {
         if (v.includes(word)) return true
     }
-    
+
     return false;
 }
 
@@ -42,7 +41,4 @@ const transpose = function(matrix) {
     return newArr;
 };
   
-
 module.exports = wordSearch
-
-
